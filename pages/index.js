@@ -28,13 +28,31 @@ function HomePage() {
   return (
     <>
       <Head>
-        <title>EXT Project</title>
-        <link
-          rel="stylesheet"
-          href="https://css.zeit.sh/v1.css"
-          type="text/css"
-        />
+        <title>Radio | EXT Project</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charSet="utf-8" />
+        <link rel="shortcut icon" type="image/jpg" href="./assets/favicon-32x32.png" />
+        <link rel="icon" href="./assets/favicon-32x32.png" />
+        <link rel="apple-touch-icon" href="./assets/favicon-32x32.png" />
+        <meta name="description" content="EXT Project is a community Radio Station based in the heart of East London at the Containerville site. We create opportunities for young people, artists and the local community."/>
+        <link rel="canonical" href="https://www.extproject.co.uk"/>
+        <meta property="og:description" content="EXT Project is a community Radio Station based in the heart of East London at the Containerville site. We create opportunities for young people, artists and the local community. "/>
+        <meta property="og:title" content="Radio | EXT Project"/>
+        <meta property="og:image" content="./assets/images/ext-project-radio.png"/>
+        <meta property="og:url" content="https://www.extproject.co.uk"/>
+        <meta property="og:site_name" content="EXT Project"/>
+        <meta property="og:type" content="website"/>
+        <meta name="fb_admins_meta_tag" content="extproject49"/>
+        <meta name="twitter:title" content="extproject49"></meta>
+        <meta property="fb:admins" content="extproject49"/>
+        <meta property="og:site_name" content="EXT Project" key="ogsitename" />
+        <meta name="twitter:card" content="summary" key="twcard" />
+        <meta name="twitter:creator" content="@extproject" key="twhandle" />
+
+
+      
       </Head>
+     
       {posts.length > 0
         ? posts.map((p) => (
             <Post
